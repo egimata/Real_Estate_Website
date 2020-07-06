@@ -1,0 +1,44 @@
+#header {
+    width: auto;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a6286;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+#branding h1 {
+    color: #fff;
+    font-weight: unset;
+    font-size: 30px;
+    font-family: "Marvel", sans-serif;
+    font-weight: 700;
+}
+
+a:link
+a:visited {
+    color: #56af82e0;
+}
+
+div.breadcrumbs {
+    background: #339a379e;
+    padding: 10px 41px;
+    border: none;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: left;
+}
+
+div.breadcrumbs a {
+    color: #1a6286;
+}
+
+.module h2, .module caption, .inline-group h2 {
+    background: #339a379e
+}
+
+p img, h1 img, h2 img, h3 img, h4 img, td img {
+    vertical-align: sub;
+}
