@@ -25,5 +25,10 @@ price_choices = {
 }
 
 state_choices = {
-        'Albania':'Albania',
+        'Albania': 'Albania',
+}
+
+city_choices = {
+  'Tirana': 'Tirana',
+  'Durres': 'Durres'
 }

@@ -26,7 +26,16 @@
 
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">City</label>
-                  <input type="text" name="city" class="form-control" placeholder="City">
+                  <select name="city" class="form-control">               
+                    <option selected="true" disabled="disabled">City (All)</option>
+                      {% for key, value in city_choices.items %}
+
+                        <option value="{{ key }}">{{ value }}</option>
+
+                      {% endfor %}
+                  </select>
+
+                  <!-- <input type="text" name="city" class="form-control" placeholder="City"> -->
                 </div>
 
                 <div class="col-md-4 mb-3">
