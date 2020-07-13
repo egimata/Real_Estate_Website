@@ -3076,6 +3076,7 @@ input[type="button"].btn-block {
   .card > .list-group:last-child .list-group-item:last-child {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem; }
+  
 
 .card-body {
   flex: 1 1 auto;
@@ -3140,6 +3141,7 @@ input[type="button"].btn-block {
   width: 100%;
   border-top-left-radius: calc( 0.25rem - 1px);
   border-top-right-radius: calc( 0.25rem - 1px); }
+
 
 .card-img-bottom {
   width: 100%;

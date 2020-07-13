@@ -26,7 +26,7 @@
 
                 <div class="col-md-4 mb-3">
                   <label class="sr-only">City</label>
-                  <select name="city" class="form-control">               
+                  <select name="city" class="form-control selectpicker" data-live-search="true">               
                     <option selected="true" disabled="disabled">City (All)</option>
                       {% for key, value in city_choices.items %}
 
@@ -86,13 +86,14 @@
         {% if listings %}
           {% for listing in listings %}
             <div class="col-md-6 col-lg-4 mb-4">
-              <div class="card listing-preview">
-                <img class="card-img-top" src="{{listing.photo_main.url}}" alt="">
-                <div class="card-img-overlay">
+              <div class="card listing-preview img-hover-zoom img-hover-zoom img">
+                
+                <img class="card-img-top" src="{{listing.photo_main.url}}" alt="Card image" style="width:100%" onclick="goToListingDetails('{{listing.id}}')">
+                <!-- <div class="card-img-overlay"> -->
                   <h2>
-                    <span class="badge badge-secondary text-white">€{{ listing.price | intcomma }}</span>
+                    <span class="badge badge-secondary text-white listing_price">€{{ listing.price | intcomma }}</span>
                   </h2>
-                </div>
+                <!-- </div> -->
                 <div class="card-body">
                   <div class="listing-heading text-center">
                     <h4 class="text-primary">{{ listing.title }}</h4>
@@ -122,7 +123,7 @@
                       <i class="fas fa-clock"></i> {{ listing.list_date | timesince }}</div>
                   </div>
                   <hr>
-                  <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a>
+                  <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block stretched-link">More Info</a>
                 </div>
               </div>
             </div>
